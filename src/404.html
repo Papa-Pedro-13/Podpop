@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Not found'
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/header.html')
+
+    <main class="page">
+      <section class="not-found">
+        <div class="not-found__container">
+          <div class="not-found__bg">
+            <img src="./images/404.svg" alt="">
+            <img src="./images/404bg.svg" alt="">
+          </div>
+          <h2 class="not-found__headline h2-title">Oops,
+            <br>
+            Page not found
+          </h2>
+          <div class="not-found__subtitle">This page doesn’t exist or was removed! <br> We suggest you back to home
+          </div>
+          <a class="not-found__btn btn" href='./'>Back to Home</a>
+        </div>
+      </section>
+    </main>
+
+    @@include('html/footer.html')
+  </div>
+
+  @@include('html/popupExample.html')
+  @@include('html/script.html')
+</body>
+
+</html>

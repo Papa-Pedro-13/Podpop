@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Delivery'
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/header.html')
+
+    <main class="page">
+      <div class="breadcrumbs">
+        <div class="breadcrumbs__container">
+          <a href="./" class="breadcrumbs__link">Main</a>
+          <span>/</span>
+          <a href="./support.html" class="breadcrumbs__link">Support</a>
+          <span>/</span>
+          <div class="breadcrumbs__current">Delivery</div>
+        </div>
+      </div>
+      <section class="article article-grid">
+        <div class="article__container">
+          <div class="article__item">
+            <div class="article__title">Delivery</div>
+            <div class="article__headline">Delivery Time, Delivery Cost, and Countries We Ship To</div>
+            <div class="article__body">
+              <p class="article__text">We use DHL delivery services to send our products to EU countries. Our goal is to
+                ensure fast delivery of your order. Our logistics team processes orders within one business day.</p>
+              <p class="article__text">Standard delivery to the Netherlands and Belgium takes 1-5 business days and is
+                free for orders over €55. For orders under €55, a €5.95 delivery fee applies. For delivery outside the
+                Netherlands and Belgium, an additional fee will be charged, which will be indicated when placing the
+                order.</p>
+              <p class="article__text">During sales periods or high volumes of logistics traffic, delivery may take a
+                few extra business days than usual.</p>
+              <p class="article__text">We will email order status updates and provide a DHL tracking code to monitor
+                delivery.</p>
+            </div>
+          </div>
+          <div class="article__item">
+
+            <div class="article__body">
+              <div class="article__headline">
+                <span>standard delivery</span>
+                DHL PARCEL CONNECT
+              </div>
+              <p class="article__text">Delivery time 1-5 business days, depending on the country of delivery. Please
+                check the delivery rates and delivery times per country below</p>
+              <ul class="article__list">
+                <li class="article-list__item">Delivery at home.</li>
+                <li class="article-list__item">Delivery to a DHL service point (we show you the available service points
+                  during check-out).</li>
+              </ul>
+              <p class="article__text shadow">DHL will make one attempt to deliver your package. If you are unavailable,
+                DHL will hold packages up to 7 days at a nearby service point for pickup. They may also attempt delivery
+                to neighbors.</p>
+            </div>
+          </div>
+          <div class="article__item">
+
+            <div class="article__body">
+              <div class="article__headline">
+                <span>express delivery</span>
+                DHL EXPRESS DELIVERY (ON DEMAND)
+              </div>
+              <p class="article__text">Delivery time 1-2 business days for all EU-countries. Delivery rates depend on
+                the weight of the products your order and the delivery address you fill in during check-out.</p>
+              <ul class="article__list">
+                <li class="article-list__item">Notification via email or SMS about your shipment’s progress and
+                  estimated delivery date/time.</li>
+                <li class="article-list__item">Choose the time and place of delivery, after you ordered</li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @@include('html/footer.html')
+  </div>
+
+  @@include('html/popupExample.html')
+  @@include('html/script.html')
+</body>
+
+</html>

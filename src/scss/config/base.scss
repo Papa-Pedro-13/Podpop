@@ -1,0 +1,88 @@
+/** Базовые анимации: */
+@import 'keyframes';
+
+/** Стили для полноэкранного блока: */
+// @import "fullscreen";
+
+/*
+* (i) Стили будут применяться ко
+* всем классам содержащим *__container
+* Например header__container, main__container и т.д.
+*/
+[class*='__container'] {
+  max-width: rem($maxWidthContainer);
+  width: calc(100% - 2 * rem($mainOffset));
+  margin: 0 auto;
+  padding: 0 rem($mainOffset);
+}
+
+// Стили отзывчивых картинок (IBG) ============================================
+[class*='-ibg'] {
+  position: relative;
+
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+}
+
+[class*='-ibg_contain'] {
+  img {
+    object-fit: contain;
+  }
+}
+
+// Оболочка ===================================================================
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
+  /** Поменять на clip - если используется в проекте position: sticky */
+  overflow: hidden;
+}
+
+.page {
+  position: relative;
+  flex: 1 1 auto;
+
+  [data-observ] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: rem(2);
+    background: transparent;
+    pointer-events: none;
+  }
+
+  &_start {
+    padding-top: rem($headerHeight);
+  }
+}
+body {
+  background-color: #f4f7fb;
+}
+.btn {
+  /* Desctop/Button */
+  color: rgb(51, 51, 51);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  border-radius: 24px;
+  background: rgb(254, 225, 1);
+  width: 100%;
+  text-align: center;
+  display: block;
+  padding: 16px 24px 16px 24px;
+}
+.btn-reverse {
+  box-sizing: border-box;
+  background-color: inherit;
+  border: 2px solid rgb(254, 225, 1);
+  border-radius: 24px;
+}

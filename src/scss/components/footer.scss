@@ -1,0 +1,93 @@
+.footer {
+  margin-top: -30px;
+  padding-top: 30px;
+  background-color: #333333;
+  &__container {
+    padding: 24px 0px;
+  }
+  &__top {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 140px;
+    gap: 16px 20px;
+  }
+  &__logo {
+    height: 30px;
+  }
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 50px;
+  }
+  &__bottom-left {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &__addr {
+    color: rgb(244, 247, 251);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  &__text {
+    color: rgb(104, 104, 104);
+    font-weight: 500;
+    line-height: 20px;
+  }
+  &__bottom-right {
+    display: flex;
+    gap: 24px;
+  }
+  &__link {
+    color: rgb(104, 104, 104);
+    font-weight: 500;
+    line-height: 20px;
+    text-decoration-line: underline;
+    transition: all 0.3s ease-in;
+    &:hover {
+      color: #d0e5ff;
+    }
+  }
+  &__socials {
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+}
+.footer-nav {
+  transform: translateY(8px);
+  &__title {
+    color: rgb(244, 247, 251);
+    font-weight: 500;
+    line-height: 20px;
+  }
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  &__link {
+    color: rgb(104, 104, 104);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+}
+.footer-socials__link {
+  svg path {
+    transition: all 0.3s ease-in;
+  }
+  &:hover svg path {
+    fill: #d0e5ff;
+  }
+}
