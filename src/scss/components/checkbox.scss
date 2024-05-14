@@ -9,7 +9,8 @@
   align-items: center;
   gap: 4px;
   text-wrap: nowrap;
-
+  user-select: none;
+  cursor: pointer;
   // .checkbox__input
   &__input {
     appearance: none;
@@ -17,13 +18,21 @@
 
     /* Checked */
     &:checked + .checkbox__box {
-      background-color: #ff4040;
-      border-color: #fff;
-    }
-
-    /* Focused */
-    &:focus + .checkbox__box {
-      box-shadow: 0 0 0 2px blue;
+      background-color: #fee101;
+      border-color: #fee101;
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        width: 13px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        height: 10px;
+        background-image: url('data:image/svg+xml,<svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.55938 9.61842L0.046875 5.10592L1.175 3.9778L4.55938 7.36217L11.8229 0.0986328L12.951 1.22676L4.55938 9.61842Z" fill="%23333333"/></svg>');
+        background-size: contain;
+        background-position: center;
+      }
     }
 
     &:checked:focus + .checkbox__box {

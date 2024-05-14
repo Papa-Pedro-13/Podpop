@@ -1,0 +1,65 @@
+/* The container must be positioned relative: */
+.products__select {
+  position: relative;
+  font-family: Arial;
+}
+
+.products__select select {
+  display: none; /*hide original SELECT element: */
+}
+.select-selected {
+  position: relative;
+}
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  right: 28px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.2s ease-in;
+  content: url('data:image/svg+xml,<svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.8327 1.47363L6.99935 7.30697L1.16602 1.47363" stroke="%23333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,
+.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+.select-selected {
+  border: 2px solid #fee101;
+  background-color: inherit;
+  padding: 15px 24px;
+  border-radius: 24px;
+  color: rgb(51, 51, 51);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+}
+.select-items div:hover,
+.same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}

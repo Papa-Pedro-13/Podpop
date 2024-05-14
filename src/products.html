@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Products'
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/header.html')
+
+    <main class="page">
+
+      <div class="prod-slider-block">
+        <div class="prod-slider-block__container">
+
+          <div class="swiper prod-slider">
+            <div class="swiper-wrapper">
+              <div class="prod-slider__slide swiper-slide">
+                <p>Shop All New Arrivals</p>
+                <a href="#">Shop</a>
+              </div>
+              <div class="prod-slider__slide swiper-slide">
+                <p>Shop All New Arrivals</p>
+                <a href="#">Shop</a>
+              </div>
+              <div class="prod-slider__slide swiper-slide">
+                <p>Shop All New Arrivals</p>
+                <a href="#">Shop</a>
+              </div>
+              <div class="prod-slider__slide swiper-slide">
+                <p>Shop All New Arrivals</p>
+                <a href="#">Shop</a>
+              </div>
+              <div class="prod-slider__slide swiper-slide">
+                <p>Shop All New Arrivals</p>
+                <a href="#">Shop</a>
+              </div>
+              <div class="prod-slider__slide swiper-slide">
+                <p>Shop All New Arrivals</p>
+                <a href="#">Shop</a>
+              </div>
+              <div class="prod-slider__slide swiper-slide">
+                <p>Shop All New Arrivals</p>
+                <a href="#">Shop</a>
+              </div>
+              <div class="prod-slider__slide swiper-slide">
+                <p>Shop All New Arrivals</p>
+                <a href="#">Shop</a>
+              </div>
+              <div class="prod-slider__slide swiper-slide">
+                <p>Shop All New Arrivals</p>
+                <a href="#">Shop</a>
+              </div>
+            </div>
+            <div class="prod-slider-prev swiper-button-prev">
+              <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 15.974L1 8.974L8 1.974" stroke="#333333" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div class="prod-slider-next swiper-button-next">
+              <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1.974L8 8.974L1 15.974" stroke="#333333" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="breadcrumbs mt-28">
+        <div class="breadcrumbs__container">
+          <a href="./" class="breadcrumbs__link">Main</a>
+          <span>/</span>
+          <div class="breadcrumbs__current">Products</div>
+        </div>
+      </div>
+
+      <section class="products">
+        <div class="products__container">
+          <h2 class="products__headline h2-title">Products</h2>
+          <div class="products__top">
+            <div class="products__filter-btn">
+              <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 10.4736H19M1 10.4736H3M3 10.4736C3 11.8543 4.11929 12.9736 5.5 12.9736C6.88071 12.9736 8 11.8543 8 10.4736C8 9.09292 6.88071 7.97363 5.5 7.97363C4.11929 7.97363 3 9.09292 3 10.4736ZM18 4.47363H19M1 4.47363H8M14.5 6.97363C13.1193 6.97363 12 5.85434 12 4.47363C12 3.09292 13.1193 1.97363 14.5 1.97363C15.8807 1.97363 17 3.09292 17 4.47363C17 5.85434 15.8807 6.97363 14.5 6.97363Z"
+                  stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              Filters
+            </div>
+            <div class="products__select" style="width:200px;">
+              <select>
+                <option value="0">Sort by</option>
+                <option value="1">by price</option>
+                <option value="2">by popularity</option>
+                <option value="3">new collection</option>
+              </select>
+            </div>
+          </div>
+          <div class="products__outer-list">
+            <div class="products__filters">
+              <div class="products-filters__inner">
+
+
+                <div class="products-filters__top">
+                  Filters
+                  <div class="products-filters__close">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 17L9.00002 9.00002M9.00002 9.00002L1 1M9.00002 9.00002L17 1M9.00002 9.00002L1 17"
+                        stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </div>
+                <a href="" class="products__btn">
+                  All Products
+                </a>
+                <a href="" class="products__btn active">
+                  Trending this week
+                </a>
+                <div class="products__accordion">
+                  <div class="accordion__item">
+
+                    <div class="accordion__header">Cushions</div>
+                    <div class="accordion__content">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox">
+                        <span class="checkbox__box"></span>
+                        version 1
+                      </label>
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" checked>
+                        <span class="checkbox__box"></span>
+                        version 2
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <a href="" class="products__btn">Beanies</a>
+                <a href="" class="products__btn">Socks</a>
+                <a href="" class="products__btn border-bottom">Other (stikers, carabiners, gift card)</a>
+                <div class="products__accordion">
+                  <div class="accordion__item border-bottom">
+                    <div class="accordion__header">Colour</div>
+                    <div class="accordion__content products__colors">
+                      <div class="products__color">
+                        <div class="products__circle" style='background-color: #FC7901;'></div>
+                        <div class="products-color__text">Orange</div>
+                      </div>
+                      <div class="products__color">
+                        <div class="products__circle" style='background-color: #35A7FF;'></div>
+                        <div class="products-color__text">Blue</div>
+                      </div>
+                      <div class="products__color">
+                        <div class="products__circle" style='background-color: #FF3C38;'></div>
+                        <div class="products-color__text">Red</div>
+                      </div>
+                      <div class="products__color">
+                        <div class="products__circle" style='background-color: #fff;'></div>
+                        <div class="products-color__text">White</div>
+                      </div>
+                      <div class="products__color">
+                        <div class="products__circle" style='background-color: #FEE101;'></div>
+                        <div class="products-color__text">Yellow</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="products__accordion">
+                  <div class="accordion__item border-bottom">
+                    <div class="accordion__header">Collection</div>
+                    <div class="accordion__content products__colors">
+                      <div class="products__color">
+                        <div class="products__circle" style='background-color: #FC7901;'></div>
+                        <div class="products-color__text">Orange</div>
+                      </div>
+                      <div class="products__color">
+                        <div class="products__circle" style='background-color: #35A7FF;'></div>
+                        <div class="products-color__text">Blue</div>
+                      </div>
+                      <div class="products__color">
+                        <div class="products__circle" style='background-color: #FF3C38;'></div>
+                        <div class="products-color__text">Red</div>
+                      </div>
+                      <div class="products__color">
+                        <div class="products__circle" style='background-color: #fff;'></div>
+                        <div class="products-color__text">White</div>
+                      </div>
+                      <div class="products__color">
+                        <div class="products__circle" style='background-color: #FEE101;'></div>
+                        <div class="products-color__text">Yellow</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="products__accordion">
+                  <div class="accordion__item">
+                    <div class="accordion__header">Shop by Price</div>
+                    <div class="accordion__content">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox">
+                        <span class="checkbox__box"></span>
+                        $0 - $50
+                      </label>
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" checked>
+                        <span class="checkbox__box"></span>
+                        $50 - $100
+                      </label>
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" checked>
+                        <span class="checkbox__box"></span>
+                        $100 - $150
+                      </label>
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" checked>
+                        <span class="checkbox__box"></span>
+                        $150+
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <button class="products__clear">
+                  <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M12.3612 8.1936C12.3612 9.22272 12.0476 10.2288 11.4601 11.0849C10.8726 11.941 10.0375 12.6089 9.06001 13.0042C8.08254 13.3995 7.00653 13.5046 5.96769 13.3062C4.92886 13.1078 3.97376 12.6148 3.22279 11.8894C2.47183 11.164 1.95868 10.2387 1.74805 9.23013C1.53742 8.22158 1.63872 7.17497 2.03923 6.22234C2.43974 5.2697 3.12151 4.45371 3.99852 3.87724C4.87553 3.30078 5.9085 2.98967 6.96717 2.98317V4.30945L9.9032 2.15398L6.96717 0V1.39113C5.58403 1.39743 4.23381 1.8019 3.08695 2.55349C1.94009 3.30509 1.04801 4.3701 0.523287 5.61411C-0.00143529 6.85813 -0.135278 8.22536 0.138681 9.54325C0.41264 10.8611 1.08212 12.0706 2.06259 13.0189C3.04306 13.9673 4.29058 14.6121 5.64768 14.8718C7.00477 15.1316 8.41061 14.9947 9.68775 14.4784C10.9649 13.9622 12.0561 13.0897 12.8235 11.9711C13.591 10.8526 14.0004 9.53812 14 8.1936H12.3586H12.3612Z"
+                      fill="#686868" />
+                  </svg>
+                  Clear the filter
+                </button>
+                <button class="products__result btn">
+                  Show results
+                </button>
+              </div>
+            </div>
+
+            <div class="products__list swiper">
+              <div class="swiper-wrapper">
+                <div class="products__item swiper-slide">
+                  <img src="./images/shadow-img.png" alt="" class="products__img">
+                  <div class="products__text">
+                    <div class="products__left">
+                      <div class="products__title">Header</div>
+                      <div class="products__desc">Description</div>
+                    </div>
+                    <div class="products__price">$ 66</div>
+                  </div>
+                </div>
+                <div class="products__item swiper-slide products__item--new">
+                  <img src="./images/shadow-img.png" alt="" class="products__img">
+                  <div class="products__text">
+                    <div class="products__left">
+                      <div class="products__title">Header</div>
+                      <div class="products__desc">Description</div>
+                    </div>
+                    <div class="products__price">$ 66</div>
+                  </div>
+                </div>
+                <div class="products__item swiper-slide">
+                  <img src="./images/shadow-img.png" alt="" class="products__img">
+                  <div class="products__text">
+                    <div class="products__left">
+                      <div class="products__title">Header</div>
+                      <div class="products__desc">Description</div>
+                    </div>
+                    <div class="products__price">$ 66</div>
+                  </div>
+                </div>
+                <div class="products__item swiper-slide">
+                  <img src="./images/shadow-img.png" alt="" class="products__img">
+                  <div class="products__text">
+                    <div class="products__left">
+                      <div class="products__title">Header</div>
+                      <div class="products__desc">Description</div>
+                    </div>
+                    <div class="products__price">$ 66</div>
+                  </div>
+                </div>
+                <div class="products__item swiper-slide products__item--new">
+                  <img src="./images/shadow-img.png" alt="" class="products__img">
+                  <div class="products__text">
+                    <div class="products__left">
+                      <div class="products__title">Header</div>
+                      <div class="products__desc">Description</div>
+                    </div>
+                    <div class="products__price">$ 66</div>
+                  </div>
+                </div>
+                <div class="products__item swiper-slide">
+                  <img src="./images/shadow-img.png" alt="" class="products__img">
+                  <div class="products__text">
+                    <div class="products__left">
+                      <div class="products__title">Header</div>
+                      <div class="products__desc">Description</div>
+                    </div>
+                    <div class="products__price">$ 66</div>
+                  </div>
+                </div>
+                <div class="products__item swiper-slide">
+                  <img src="./images/shadow-img.png" alt="" class="products__img">
+                  <div class="products__text">
+                    <div class="products__left">
+                      <div class="products__title">Header</div>
+                      <div class="products__desc">Description</div>
+                    </div>
+                    <div class="products__price">$ 66</div>
+                  </div>
+                </div>
+                <div class="products__item swiper-slide products__item--new">
+                  <img src="./images/shadow-img.png" alt="" class="products__img">
+                  <div class="products__text">
+                    <div class="products__left">
+                      <div class="products__title">Header</div>
+                      <div class="products__desc">Description</div>
+                    </div>
+                    <div class="products__price">$ 66</div>
+                  </div>
+                </div>
+                <div class="products__item swiper-slide">
+                  <img src="./images/shadow-img.png" alt="" class="products__img">
+                  <div class="products__text">
+                    <div class="products__left">
+                      <div class="products__title">Header</div>
+                      <div class="products__desc">Description</div>
+                    </div>
+                    <div class="products__price">$ 66</div>
+                  </div>
+                </div>
+                <div class="products__item swiper-slide">
+                  <img src="./images/shadow-img.png" alt="" class="products__img">
+                  <div class="products__text">
+                    <div class="products__left">
+                      <div class="products__title">Header</div>
+                      <div class="products__desc">Description</div>
+                    </div>
+                    <div class="products__price">$ 66</div>
+                  </div>
+                </div>
+                <div class="products__item swiper-slide">
+                  <img src="./images/shadow-img.png" alt="" class="products__img">
+                  <div class="products__text">
+                    <div class="products__left">
+                      <div class="products__title">Header</div>
+                      <div class="products__desc">Description</div>
+                    </div>
+                    <div class="products__price">$ 66</div>
+                  </div>
+                </div>
+                <div class="products__item swiper-slide">
+                  <img src="./images/shadow-img.png" alt="" class="products__img">
+                  <div class="products__text">
+                    <div class="products__left">
+                      <div class="products__title">Header</div>
+                      <div class="products__desc">Description</div>
+                    </div>
+                    <div class="products__price">$ 66</div>
+                  </div>
+                </div>
+                <div class="products__item swiper-slide">
+                  <img src="./images/shadow-img.png" alt="" class="products__img">
+                  <div class="products__text">
+                    <div class="products__left">
+                      <div class="products__title">Header</div>
+                      <div class="products__desc">Description</div>
+                    </div>
+                    <div class="products__price">$ 66</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="products__nav">
+            <div class="products__prev">
+              <svg width="10" height="17" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.9993 20.3337L1.66602 11.0003L10.9993 1.66699" stroke="#333333" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+
+            </div>
+            <div class="products__pagination"></div>
+            <div class="products__next">
+              <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.5 1.47363L8.5 8.47363L1.5 15.4736" stroke="#333333" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+      <section class="notice">
+        <div class="notice__container">
+          <h3 class="notice__headline">Only quality materials</h3>
+          <p class="notice__desc">Upholstery - most often made of a soft fabric such as cotton, linen or velour. The
+            cushion upholstery can be removable and machine washable.</p>
+          <a href="" class="notice__btn btn btn-reverse">Read more</a>
+        </div>
+      </section>
+
+    </main>
+
+    @@include('html/footer.html')
+  </div>
+
+  @@include('html/popupExample.html')
+  @@include('html/script.html')
+</body>
+
+</html>
