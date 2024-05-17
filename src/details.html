@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Company details'
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/header.html')
+
+    <main class="page">
+      <section class="details">
+        <div class="details__container">
+          <h2 class="details__headline h2-title">Company details</h2>
+          <div class="details__address">
+            <div class="details__title">Registered address:</div>
+            <p class="details__text">
+              3551 WC, The Netherlands, Utrecht, Bromwissel 49 <br>
+              Please note that there is no physical store or
+              pickup
+              point at this address. All orders are processed exclusively through the website.
+            </p>
+          </div>
+          <div class="details__list">
+            <div class="details__title">
+              Dutch Chamber of Commerce Registration Number:
+              <span>92674305</span>
+            </div>
+            <div class="details__title">
+              Value Added Tax Registration Number:
+              <span>NL004970586B35</span>
+            </div>
+            <div class="details__title">
+              Email:
+              <span class='small'>podpop.one@gmail.com</span>
+            </div>
+          </div>
+          <a href="#" class="details__link btn">Shop</a>
+          <img src="./images/details.png" alt="" class="details__img">
+        </div>
+      </section>
+    </main>
+
+    @@include('html/footer.html')
+  </div>
+
+  @@include('html/popupExample.html')
+  @@include('html/script.html')
+</body>
+
+</html>

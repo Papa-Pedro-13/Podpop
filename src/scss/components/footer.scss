@@ -81,6 +81,10 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 18px;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      color: #d0e5ff;
+    }
   }
 }
 .footer-socials__link {

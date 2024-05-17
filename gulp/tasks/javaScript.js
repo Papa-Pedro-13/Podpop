@@ -9,6 +9,7 @@ import { logger } from "../config/Logger.js";
 const javaScript = (isDev) => {
   return gulp.src(filePaths.src.js, { sourcemaps: isDev })
     .pipe(logger.handleError('JS'))
+    .pipe(gulp.dest(filePaths.build.js))
     .pipe(webpack({ config: webpackConfig(isDev) }))
     .pipe(gulp.dest(filePaths.build.js))
     .pipe(plugins.browserSync.stream());

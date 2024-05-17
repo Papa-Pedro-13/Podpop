@@ -127,36 +127,45 @@ function toggleBodyLock2(isLock) {
 }
 
 window.onload = function () {
-	document.querySelector(".products__filter-btn").addEventListener('click', () => {
-		document.querySelector(".products__filters").classList.add('active')
-		toggleBodyLock2(true);
-	})
-	document.querySelector(".products-filters__close").addEventListener('click', () => {
-		document.querySelector(".products__filters").classList.remove('active')
-		if (!html.classList.contains('menu-open')) {
-			toggleBodyLock2(false)
-		}
-	})
-	document.querySelector(".products__result").addEventListener('click', () => {
-		document.querySelector(".products__filters").classList.remove('active')
-		if (!html.classList.contains('menu-open')) {
-			toggleBodyLock2(false)
-		}
-	})
-	document.querySelector(".products__filters").addEventListener('click', (e) => {
-		if (e.target === document.querySelector(".products__filters")) {
+	if (document.querySelector(".header-mob__lang-btn")) {
+		document.querySelector(".header-mob__lang-btn").addEventListener("click", () => {
+			document.querySelector('.header-mob__langs').classList.toggle('active')
+		})
+	}
+	try {
+
+		document.querySelector(".products__filter-btn").addEventListener('click', () => {
+			document.querySelector(".products__filters").classList.add('active')
+			toggleBodyLock2(true);
+		})
+		document.querySelector(".products-filters__close").addEventListener('click', () => {
 			document.querySelector(".products__filters").classList.remove('active')
 			if (!html.classList.contains('menu-open')) {
 				toggleBodyLock2(false)
 			}
-		}
-	})
-	document.querySelector(".products__clear").addEventListener('click', () => {
-		document.querySelector(".products__filters").classList.remove('active')
-		if (!html.classList.contains('menu-open')) {
-			toggleBodyLock2(false)
-		}
-	})
+		})
+		document.querySelector(".products__result").addEventListener('click', () => {
+			document.querySelector(".products__filters").classList.remove('active')
+			if (!html.classList.contains('menu-open')) {
+				toggleBodyLock2(false)
+			}
+		})
+		document.querySelector(".products__filters").addEventListener('click', (e) => {
+			if (e.target === document.querySelector(".products__filters")) {
+				document.querySelector(".products__filters").classList.remove('active')
+				if (!html.classList.contains('menu-open')) {
+					toggleBodyLock2(false)
+				}
+			}
+		})
+		document.querySelector(".products__clear").addEventListener('click', () => {
+			document.querySelector(".products__filters").classList.remove('active')
+			if (!html.classList.contains('menu-open')) {
+				toggleBodyLock2(false)
+			}
+		})
+	} catch (err) { console.log(err) }
+
 	document.querySelectorAll(".dropdown__btn").forEach((item) => {
 		item.addEventListener('click', (e) => {
 			if (item.parentElement.classList.contains('active')) {

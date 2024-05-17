@@ -21,10 +21,10 @@ const scss = (isBuild) => {
 		noWebpClass: '.no-webp',
 	};
 
-	return gulp.src(filePaths.src.scss, {sourcemaps: !isBuild})
-    .pipe(logger.handleError('SCSS'))
+	return gulp.src(filePaths.src.scss, { sourcemaps: !isBuild })
+		.pipe(logger.handleError('SCSS'))
 
-		.pipe(sass({outputStyle: 'expanded'}))
+		.pipe(sass({ outputStyle: 'expanded' }))
 		.pipe(plugins.replace(/@img\//g, '../images/'))
 
 		/** Группировка медиа-запросов только для production */
@@ -34,10 +34,10 @@ const scss = (isBuild) => {
 		.pipe(plugins.if(isBuild, postcss([autoprefixer(), postcssPresetEnv()])))
 
 		/** Раскомментировать если нужен не сжатый дубль файла стилей */
-		// .pipe(gulp.dest(filePaths.build.css))
+		.pipe(gulp.dest(filePaths.build.css))
 
 		.pipe(plugins.if(isBuild, cleanCss()))
-		.pipe(rename({extname: '.min.css'}))
+		.pipe(rename({ extname: '.min.css' }))
 		.pipe(gulp.dest(filePaths.build.css))
 		.pipe(plugins.browserSync.stream());
 };

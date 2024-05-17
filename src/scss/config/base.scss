@@ -79,6 +79,13 @@ body {
   text-align: center;
   display: block;
   padding: 16px 24px 16px 24px;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: #ffe93f;
+  }
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 .btn-reverse {
   box-sizing: border-box;
