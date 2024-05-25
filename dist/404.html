@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <style>
+    .loaded {
+      opacity: 1
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Not found</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+  <div class="header__container">
+
+
+    <a href="#" class="logo header__logo">
+      <img src="./images/Logo.svg" alt="">
+    </a>
+    <nav class="header__menu menu">
+      <ul class="menu__list">
+        <li class="dropdown menu__item">
+          <div class="dropdown__btn">
+            Products
+          </div>
+          <div class="dropdown__list">
+            <a class="dropdown__link" href="#">All products</a>
+            <a class="dropdown__link" href="#">Cushions</a>
+            <a class="dropdown__link" href="#">Beanies</a>
+            <a class="dropdown__link" href="#">Socks</a>
+            <a class="dropdown__link" href="#">New Arrivals</a>
+            <a class="dropdown__link" href="#">Trending this week</a>
+          </div>
+        </li>
+        <li class="menu__item"><a href="#">Trending this week</a></li>
+        <li class="dropdown menu__item">
+          <div class="dropdown__btn">
+            About Us
+          </div>
+          <div class="dropdown__list">
+            <a class="dropdown__link" href="#">Our story and principles</a>
+            <a class="dropdown__link" href="#">Our design</a>
+            <a class="dropdown__link" href="#">Contact</a>
+          </div>
+        </li>
+        <li class="dropdown menu__item">
+          <div class="dropdown__btn">
+            Support
+          </div>
+          <div class="dropdown__list">
+            <a class="dropdown__link" href="#">FAQ</a>
+            <a class="dropdown__link" href="#">Shipping</a>
+            <a class="dropdown__link" href="#">Returns</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header__icons">
+      <div class="header-search">
+        <img src="./images/Search.svg" alt="" class="header-search__img">
+        <input type="text" class="header-search__input" placeholder="Search">
+      </div>
+      <div class="dropdown header__languages" href="#">
+        <svg class="dropdown__btn" width="26.000000" height="26.000000" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+          <defs/>
+          <path id="Vector" d="M1 12.31L7.66 12.31L18.33 12.31L25 12.31M1 12.31C1 5.68 6.37 0.31 13 0.31C19.62 0.31 25 5.68 25 12.31C25 18.94 19.62 24.31 13 24.31C6.37 24.31 1 18.94 1 12.31ZM13 24.31C10.05 24.31 7.66 18.94 7.66 12.31M7.66 12.31C7.66 5.68 10.05 0.31 13 0.31M13 0.31C15.94 0.31 18.33 5.68 18.33 12.31M18.33 12.31C18.33 18.94 15.94 24.31 13 24.31" stroke="#FAFAFA" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round"/>
+        </svg>
+        <div class="dropdown__list">
+          <a class="dropdown__link active" hreflang="us">
+            <img src="./images/US.svg" alt="">
+            English</a>
+          <a class="dropdown__link" hreflang="nl">
+            <img src="./images/NL.svg" alt="">
+            Dutch</a>
+
+        </div>
+      </div>
+      <div class="header__cart">
+        <img src="./images/Cart.svg" alt="">
+      </div>
+      <button type="button" class="header__mob-btn icon-menu">
+        <span></span>
+      </button>
+    </div>
+    
+
+  </div>
+</header>
+<div class="header-mob">
+  <div class="header-mob__container">
+    <div class="header-mob__list">
+      <div class="header-mob__item header-swiper__btn" data-id="products">
+        Products
+      </div>
+      <div class="header-mob__item header-swiper__btn" data-id="about">
+        About Us
+      </div>
+      <div class="header-mob__item header-swiper__btn" data-id="support">
+        Support
+      </div>
+      <a class="header-mob__item" href="#">Trending this week</a>
+      <div class="header-mob__item">
+        <div class="header-mob__lang-btn">
+          <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 10.6318H6M1 10.6318C1 15.6024 5.02944 19.6318 10 19.6318M1 10.6318C1 5.66127 5.02944 1.63184 10 1.63184M6 10.6318H14M6 10.6318C6 15.6024 7.79086 19.6318 10 19.6318M6 10.6318C6 5.66127 7.79086 1.63184 10 1.63184M14 10.6318H19M14 10.6318C14 5.66127 12.2091 1.63184 10 1.63184M14 10.6318C14 15.6024 12.2091 19.6318 10 19.6318M19 10.6318C19 5.66127 14.9706 1.63184 10 1.63184M19 10.6318C19 15.6024 14.9706 19.6318 10 19.6318" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="header-mob__langs">
+          <a class="active header-mob__lang" hreflang="us">
+            <img src="./images/US.svg" alt="">
+          </a>
+          <a class="header-mob__lang" hreflang="nl">
+            <img src="./images/NL.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-swiper" data-id="products">
+    <div class="header-swiper__container">
+      <div class="header-swiper__back">
+        <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6.00065 10.6668L1.33398 6.00016L6.00065 1.3335" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="header-swiper__title">Products</div>
+      <div class="header-mob__list">
+        <a href="#" class="header-mob__item">All products</a>
+        <a href="#" class="header-mob__item">Cushions</a>
+        <a href="#" class="header-mob__item">Beanies</a>
+        <a href="#" class="header-mob__item">Socks</a>
+        <a href="#" class="header-mob__item">New Arrivals</a>
+        <a href="#" class="header-mob__item">Trending this week</a>
+      </div>
+    </div>
+  </div>
+  <div class="header-swiper" data-id="about">
+    <div class="header-swiper__container">
+      <div class="header-swiper__back">
+        <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6.00065 10.6668L1.33398 6.00016L6.00065 1.3335" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="header-swiper__title">About Us</div>
+      <div class="header-mob__list">
+        <a href="#" class="header-mob__item">Our story and principles</a>
+        <a href="#" class="header-mob__item">Our design</a>
+        <a href="#" class="header-mob__item">Contact</a>
+      </div>
+    </div>
+  </div>
+  <div class="header-swiper" data-id="support">
+    <div class="header-swiper__container">
+      <div class="header-swiper__back">
+        <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6.00065 10.6668L1.33398 6.00016L6.00065 1.3335" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="header-swiper__title">Support</div>
+      <div class="header-mob__list">
+        <a href="#" class="header-mob__item">FAQ</a>
+        <a href="#" class="header-mob__item">Shipping</a>
+        <a href="#" class="header-mob__item">Returns</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="cart">
+  <div class="cart__container">
+    <div class="cart__top">
+      <div class="cart__headline">
+        In your cart
+      </div>
+      <div class="cart__close"></div>
+    </div>
+    <div class="cart__order order">
+      <div class="order__list">
+        <div class="order__item">
+          <img class="order__img" src="./images/shadow-img.png">
+          <div class="order__text">
+            <div class="order__title">Title Products</div>
+            <div class="order__count">
+              <div class="order__minus">
+                <svg width="18" height="2" viewBox="0 0 18 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1H17" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <span>1</span>
+              <div class="order__plus">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 9H9M9 9H17M9 9V17M9 9V1" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="order__prop">Size: One Size</div>
+            <div class="order__prop">Colour: Purple</div>
+          </div>
+          <div class="order__right">
+            <div class="order__delete"></div>
+            <div class="order__price">€ 66</div>
+          </div>
+        </div>
+        <div class="order__item">
+          <img class="order__img" src="./images/shadow-img.png">
+          <div class="order__text">
+            <div class="order__title">Title Products</div>
+            <div class="order__count">
+              <div class="order__minus">
+                <svg width="18" height="2" viewBox="0 0 18 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1H17" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <span>1</span>
+              <div class="order__plus">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 9H9M9 9H17M9 9V17M9 9V1" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </div>
+            <div class="order__prop">Size: One Size</div>
+            <div class="order__prop">Colour: Purple</div>
+          </div>
+          <div class="order__right">
+            <div class="order__delete"></div>
+            <div class="order__price">€ 66</div>
+          </div>
+        </div>
+      </div>
+      <div class="order__total">
+        Order Total
+        <span>€ 132</span>
+      </div>
+      <button type="button" class="btn order__btn">To payment</button>
+      <div class="order__policy">
+        <ul class="order__policy-list">
+          <li class="order__policy-item">Free delivery for orders above € 20,- within The Netherlands</li>
+          <li class="order__policy-item">30 days return policy</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <main class="page">
+      <section class="not-found">
+        <div class="not-found__container">
+          <div class="not-found__bg">
+            <img src="./images/404.svg" alt="">
+            <img src="./images/404bg.svg" alt="">
+          </div>
+          <h2 class="h2-title not-found__headline">Oops,
+            <br>
+            Page not found
+          </h2>
+          <div class="not-found__subtitle">This page doesn’t exist or was removed! <br> We suggest you back to home
+          </div>
+          <a class="btn not-found__btn" href="./">Back to Home</a>
+        </div>
+      </section>
+    </main>
+
+    <div class="cookie">
+  <div class="cookie__container">
+    <p class="cookie__text">
+      Our website uses cookies.
+      By continuing to use it, you agree to the processing of personal data in accordance with the
+      <a class="cookie__link" href="">Privacy Policy</a>
+    </p>
+    <button class="btn cookie__btn" type="button">Accept</button>
+    <button class="btn cookie__btn btn-reverse" type="button">Decline</button>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer__container">
+    <div class="footer__top">
+      <a class="logo footer__logo">
+        <img src="./images/Logo.svg" alt="">
+      </a>
+      <div class="footer-nav footer__nav">
+        <div class="footer-nav__title">Catalog</div>
+        <ul class="footer-nav__links">
+          <a href="#" class="footer-nav__link">All products</a>
+          <a href="#" class="footer-nav__link">Cushions</a>
+          <a href="#" class="footer-nav__link">Beanies</a>
+          <a href="#" class="footer-nav__link">Socks</a>
+          <a href="#" class="footer-nav__link">New Arrivals</a>
+          <a href="#" class="footer-nav__link">Trending this week</a>
+        </ul>
+      </div>
+      <div class="footer-nav footer__nav">
+        <div class="footer-nav__title">Buyers</div>
+        <ul class="footer-nav__links">
+          <a href="#" class="footer-nav__link">Delivery</a>
+          <a href="#" class="footer-nav__link">Payment</a>
+          <a href="#" class="footer-nav__link">Get in touch</a>
+        </ul>
+      </div>
+      <div class="footer-nav footer__nav">
+        <div class="footer-nav__title">About us</div>
+        <ul class="footer-nav__links">
+          <a href="#" class="footer-nav__link">Our story and principles</a>
+          <a href="#" class="footer-nav__link">Our design</a>
+          <a href="#" class="footer-nav__link">Contact</a>
+        </ul>
+      </div>
+      <div class="footer-nav footer__nav">
+        <div class="footer-nav__title">Support</div>
+        <ul class="footer-nav__links">
+          <a href="#" class="footer-nav__link">FAQ</a>
+          <a href="#" class="footer-nav__link">Returns</a>
+        </ul>
+      </div>
+      <div class="footer-nav footer__nav">
+        <div class="footer-nav__title">Documentation</div>
+        <ul class="footer-nav__links">
+          <a href="#" class="footer-nav__link">Confidentiality Policy </a>
+          <a href="#" class="footer-nav__link">Public offer</a>
+        </ul>
+      </div>
+      <div class="footer__socials">
+        <a class="footer-socials__link" href="#">
+          <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.0529138 0L8.54681 11.031L0 20H1.9241L9.40756 12.1479L15.4534 20H22L13.0286 8.34848L20.9844 0H19.0603L12.1692 7.23159L6.60078 0H0.0541898H0.0529138ZM2.88162 1.37637H5.88843L19.1687 18.6236H16.1619L2.88162 1.37637Z" fill="#686868"/>
+          </svg>
+        </a>
+        <a class="footer-socials__link" href="#">
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M29.5312 15.0879C29.5312 22.3535 24.1992 28.3887 17.2266 29.4434V19.3066H20.625L21.2695 15.0879H17.2266V12.3926C17.2266 11.2207 17.8125 10.1074 19.6289 10.1074H21.4453V6.5332C21.4453 6.5332 19.8047 6.24023 18.1641 6.24023C14.8828 6.24023 12.7148 8.29102 12.7148 11.9238V15.0879H9.02344V19.3066H12.7148V29.4434C5.74219 28.3887 0.46875 22.3535 0.46875 15.0879C0.46875 7.06055 6.97266 0.556641 15 0.556641C23.0273 0.556641 29.5312 7.06055 29.5312 15.0879Z" fill="#686868"/>
+          </svg>
+        </a>
+        <a class="footer-socials__link" href="#">
+          <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.2441 0H5.75585C2.582 0 0 2.57944 0 5.75015V16.2499C0 19.4206 2.582 22 5.75585 22H17.2441C20.418 22 23 19.4206 23 16.2499V5.75015C23 2.57944 20.418 0 17.2441 0ZM2.03048 5.75015C2.03048 3.69829 3.70196 2.02847 5.75585 2.02847H17.2441C19.298 2.02847 20.9695 3.69829 20.9695 5.75015V16.2499C20.9695 18.3017 19.298 19.9715 17.2441 19.9715H5.75585C3.70196 19.9715 2.03048 18.3017 2.03048 16.2499V5.75015Z" fill="#686868"/>
+            <path d="M11.3892 17.2619C14.569 17.2619 17.1574 14.6749 17.1574 11.4937C17.1574 8.31256 14.5704 5.72559 11.3892 5.72559C8.20807 5.72559 5.62109 8.31256 5.62109 11.4937C5.62109 14.6749 8.20807 17.2619 11.3892 17.2619ZM11.3892 7.91456C13.3638 7.91456 14.9698 9.52056 14.9698 11.4951C14.9698 13.4697 13.3638 15.0757 11.3892 15.0757C9.41467 15.0757 7.80867 13.4697 7.80867 11.4951C7.80867 9.52056 9.41467 7.91456 11.3892 7.91456Z" fill="#686868"/>
+            <path d="M17.6924 6.65762C18.5484 6.65762 19.246 5.96112 19.246 5.10347C19.246 4.24581 18.5498 3.54932 17.6924 3.54932C16.835 3.54932 16.1387 4.24581 16.1387 5.10347C16.1387 5.96112 16.835 6.65762 17.6924 6.65762Z" fill="#686868"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__bottom-left">
+        <div class="footer__addr">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.41416 13.5501L6.78063 14.3239L6.78064 14.3239L7.41416 13.5501ZM4.69887 3.35189L3.99568 2.64089V2.64089L4.69887 3.35189ZM11.2985 3.35181L12.0017 2.64081L11.2985 3.35181ZM8.58333 13.5502L7.94981 12.7765V12.7765L8.58333 13.5502ZM7.81784 13.8088L8.08885 12.8462L8.08884 12.8462L7.81784 13.8088ZM8.17936 13.8088L7.90835 12.8462H7.90835L8.17936 13.8088ZM8.04768 12.7764C7.45836 12.2939 6.50951 11.4315 5.71524 10.3272C4.91593 9.21585 4.33203 7.94206 4.33203 6.61523H2.33203C2.33203 8.52295 3.16296 10.2039 4.09159 11.495C5.02527 12.7931 6.11748 13.7809 6.78063 14.3239L8.04768 12.7764ZM4.33203 6.61523C4.33203 5.66001 4.71559 4.74182 5.40206 4.06289L3.99568 2.64089C2.93181 3.69307 2.33203 5.1223 2.33203 6.61523H4.33203ZM5.40206 4.06289C6.08888 3.38361 7.02278 3 7.99875 3V1C6.49937 1 5.05919 1.58906 3.99568 2.64089L5.40206 4.06289ZM7.99875 3C8.97474 3 9.90849 3.38355 10.5953 4.06282L12.0017 2.64081C10.9382 1.58898 9.49812 1 7.99875 1V3ZM10.5953 4.06282C11.2817 4.74167 11.6653 5.66021 11.6653 6.61553H13.6653C13.6653 5.1227 13.0656 3.69306 12.0017 2.64081L10.5953 4.06282ZM11.6653 6.61553C11.6653 7.94237 11.0814 9.21611 10.2822 10.3274C9.48795 11.4316 8.53914 12.294 7.94981 12.7765L9.21686 14.324C9.88 13.781 10.9722 12.7933 11.9058 11.4952C12.8344 10.2041 13.6653 8.52324 13.6653 6.61553H11.6653ZM6.78064 14.3239C6.91633 14.435 7.1731 14.6662 7.54684 14.7714L8.08884 12.8462C8.1116 12.8527 8.13578 12.8617 8.15865 12.8728C8.18019 12.8832 8.19222 12.8913 8.19166 12.891C8.18958 12.8896 8.17885 12.8821 8.1527 12.8615C8.1259 12.8404 8.09455 12.8148 8.04768 12.7764L6.78064 14.3239ZM7.94981 12.7765C7.90288 12.8149 7.87148 12.8406 7.84477 12.8616C7.81869 12.8821 7.8081 12.8895 7.80622 12.8907C7.80589 12.8909 7.81807 12.8827 7.83965 12.8723C7.86252 12.8613 7.88636 12.8524 7.90835 12.8462L8.45037 14.7714C8.82385 14.6662 9.07913 14.4367 9.21686 14.324L7.94981 12.7765ZM7.54682 14.7714C7.82819 14.8506 8.16901 14.8506 8.45037 14.7714L7.90835 12.8462C7.94154 12.8369 7.96462 12.8336 7.97482 12.8324C7.98613 12.831 7.99372 12.8308 7.9986 12.8308C8.00348 12.8308 8.01106 12.831 8.02238 12.8324C8.03258 12.8336 8.05566 12.8369 8.08885 12.8462L7.54682 14.7714ZM7.9987 6.33333C7.8146 6.33333 7.66536 6.18409 7.66536 6H5.66536C5.66536 7.28866 6.71003 8.33333 7.9987 8.33333V6.33333ZM7.66536 6C7.66536 5.81591 7.8146 5.66667 7.9987 5.66667V3.66667C6.71003 3.66667 5.66536 4.71134 5.66536 6H7.66536ZM7.9987 5.66667C8.18279 5.66667 8.33203 5.81591 8.33203 6H10.332C10.332 4.71134 9.28736 3.66667 7.9987 3.66667V5.66667ZM8.33203 6C8.33203 6.18409 8.18279 6.33333 7.9987 6.33333V8.33333C9.28736 8.33333 10.332 7.28866 10.332 6H8.33203Z" fill="#F4F7FB"/>
+          </svg>
+          Netherlands
+        </div>
+        <div class="footer__text">
+          © 2024. All Rights Reserved
+        </div>
+      </div>
+      <div class="footer__bottom-right">
+        <a class="footer__link" href="#">
+          Company Detalis
+        </a>
+        <a class="footer__link" href="#">
+          Privacy & Cookie Policy
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+  </div>
+
+  <div class="popup" data-popup="popup-1" data-close-overlay>
+    <div class="popup__wrapper" data-close-overlay>
+        <div class="popup__content">
+            <div class="popup__body">
+                <div class="popup__top">
+                    <h2 class="h2-title popup__headline">Which cushion is right for you?</h2>
+                    <button class="button-close popup__close" type="button">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 17L9.00002 9.00002M9.00002 9.00002L1 1M9.00002 9.00002L17 1M9.00002 9.00002L1 17" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="popup__items">
+                    <div class="popup-item popup__item">
+                        <img src="./images/shadow-img.png" alt="" class="popup-item__img">
+                        <div class="popup-item__title">Podpop Classic</div>
+                        <button type="button" class="btn popup-item__btn">Buy</button>
+                    </div>
+                    <div class="popup-item popup__item">
+                        <img src="./images/shadow-img.png" alt="" class="popup-item__img">
+                        <div class="popup-item__title">Podpop Pro</div>
+                        <button type="button" class="btn popup-item__btn">Buy</button>
+                    </div>
+                </div>
+                <div class="popup-props popup__props">
+                    <div class="h2-title popup-props__headline">Characteristics</div>
+                    <div class="popup-props__list">
+                        <div class="popup-props__item">
+                            <img src="./images/window.svg" alt="" class="popup-props__img">
+                            <div class="popup-props__title">25x16x8 cm</div>
+                            <div class="popup-props__subtitle">Folded podpop size</div>
+                        </div>
+                        <div class="popup-props__item">
+                            <img src="./images/window.svg" alt="" class="popup-props__img">
+                            <div class="popup-props__title">25x16x10 cm</div>
+                            <div class="popup-props__subtitle">Folded podpop size</div>
+                        </div>
+                        <div class="popup-props__item">
+                            <img src="./images/windows.svg" alt="" class="popup-props__img">
+                            <div class="popup-props__title">25x32x4 cm</div>
+                            <div class="popup-props__subtitle">Unfolded podpop size</div>
+                        </div>
+                        <div class="popup-props__item">
+                            <img src="./images/windows.svg" alt="" class="popup-props__img">
+                            <div class="popup-props__title">25x32x5 cm</div>
+                            <div class="popup-props__subtitle">Unfolded podpop size</div>
+                        </div>
+                        <div class="popup-props__item">
+                            <img src="./images/foam-1.svg" alt="" class="popup-props__img">
+                            <div class="popup-props__title">Reticulated foam (4 cm)</div>
+                            <div class="popup-props__subtitle">Type of foam</div>
+                        </div>
+                        <div class="popup-props__item">
+                            <img src="./images/foam-2.svg" alt="" class="popup-props__img">
+                            <div class="popup-props__title">Cold foam (5 cm)</div>
+                            <div class="popup-props__subtitle">Type of foam</div>
+                        </div>
+                        <div class="popup-props__item">
+                            <img src="./images/ziper-1.svg" alt="" class="popup-props__img">
+                            <div class="popup-props__title">Regular nylon zipper</div>
+                            <div class="popup-props__subtitle">Zipper Type</div>
+                        </div>
+                        <div class="popup-props__item">
+                            <img src="./images/ziper-2.svg" alt="" class="popup-props__img">
+                            <div class="popup-props__title">Waterproof nylon zipper</div>
+                            <div class="popup-props__subtitle">Zipper Type</div>
+                        </div>
+                        <div class="popup-props__item">
+                            <img src="./images/stack-1.svg" alt="" class="popup-props__img">
+                            <div class="popup-props__title">Reliable plastic</div>
+                            <div class="popup-props__subtitle">Buckles</div>
+                        </div>
+                        <div class="popup-props__item">
+                            <img src="./images/stack-2.svg" alt="" class="popup-props__img">
+                            <div class="popup-props__title">Metal (aviation-inspired)</div>
+                            <div class="popup-props__subtitle">Buckles</div>
+                        </div>
+                        <div class="popup-props__item">
+                            <img src="./images/carabin-1.svg" alt="" class="popup-props__img">
+                            <div class="popup-props__title">Aluminum</div>
+                            <div class="popup-props__subtitle">Carabiners Included</div>
+                        </div>
+                        <div class="popup-props__item">
+                            <img src="./images/carabin-2.svg" alt="" class="popup-props__img">
+                            <div class="popup-props__title">Steel</div>
+                            <div class="popup-props__subtitle">Carabiners Included</div>
+                        </div>
+                        <div class="popup-props__item">
+                            <img src="./images/fabric-1.svg" alt="" class="popup-props__img">
+                            <div class="popup-props__title">Oxford fabric</div>
+                            <div class="popup-props__subtitle">Transport Bag Fabric</div>
+                        </div>
+                        <div class="popup-props__item">
+                            <img src="./images/fabric-2.svg" alt="" class="popup-props__img">
+                            <div class="popup-props__title">Same as cushion</div>
+                            <div class="popup-props__subtitle">Transport Bag Fabric</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="js/app.min.js"></script>
+</body>
+
+</html>
