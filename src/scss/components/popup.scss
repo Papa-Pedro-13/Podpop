@@ -10,7 +10,7 @@
   pointer-events: none;
 
   /** Установить свои значения */
-  padding: rem(30) rem(10);
+  padding: 48px 16px;
   background-color: rgba(#000, 50%);
   z-index: 2000;
   transition: opacity 0.4s ease-in-out;
@@ -39,28 +39,109 @@
     margin: 0 auto;
 
     /** Установить свои значения */
-    padding: rem(30) rem(50);
-    max-width: rem(690);
+    padding: 16px;
+    max-width: 1080px;
     background-color: $white-100;
+    border-radius: 16px;
     transform: translateY(rem(-200));
     opacity: 0;
     transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
   }
 
-  // .popup__close
   &__close {
-    position: absolute;
+    background-color: inherit;
+  }
+  // .popup__close
+  // &__close {
+  //   position: absolute;
 
-    /** Установить свои значения */
-    top: rem(20);
-    right: rem(20);
-    width: rem(40);
-    height: rem(40);
+  //   /** Установить свои значения */
+  //   top: rem(20);
+  //   right: rem(20);
+  //   width: rem(40);
+  //   height: rem(40);
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   background: transparent;
+  //   color: #000;
+  //   border-radius: rem(8);
+  // }
+}
+
+.popup {
+  &__wrapper {
+  }
+  &__content {
+  }
+  &__body {
+  }
+  &__top {
     display: flex;
-    justify-content: center;
     align-items: center;
-    background: transparent;
-    color: #000;
-    border-radius: rem(8);
+    justify-content: space-between;
+  }
+  &__headline {
+  }
+  &__close {
+  }
+  &__items {
+    margin-top: 32px;
+    display: flex;
+    gap: 16px;
+  }
+}
+.popup-item {
+  width: 100%;
+  &__img {
+    width: 100%;
+    border-radius: 8px;
+    min-height: 150px;
+  }
+  &__title {
+    margin-top: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #1b1b1b;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e1efff;
+  }
+  &__btn {
+    margin-top: 16px;
+  }
+}
+
+.popup-props {
+  margin-top: 32px;
+  &__headline {
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 32px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0 auto;
+  }
+  &__img {
+  }
+  &__title {
+    text-align: center;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  &__subtitle {
+    line-height: 20px;
+    font-weight: 500;
+    text-align: center;
+    color: #b7b7b7;
   }
 }

@@ -127,6 +127,12 @@ function toggleBodyLock2(isLock) {
 }
 
 window.onload = function () {
+	document.querySelectorAll(".cookie__btn").forEach(btn => {
+
+		btn.addEventListener('click', () => {
+			document.querySelector('.cookie').style.display = 'none';
+		})
+	})
 	if (document.querySelector(".header-mob__lang-btn")) {
 		document.querySelector(".header-mob__lang-btn").addEventListener("click", () => {
 			document.querySelector('.header-mob__langs').classList.toggle('active')
